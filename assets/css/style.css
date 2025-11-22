@@ -1,39 +1,91 @@
 :root {
-    --primary-color: #198754; /* Bootstrap Success Green */
-    --secondary-color: #212529; /* Bootstrap Dark */
-    --accent-color: #ffc107; /* Bootstrap Warning Yellow */
-    --light-bg: #f8f9fa;
+    --primary-color: #0d6efd;
+    /* Premium Blue like the reference */
+    --secondary-color: #212529;
+    --accent-color: #ffc107;
+    --light-bg: #ffffff;
+    /* White background for premium feel */
+    --section-bg: #f8f9fa;
+    /* Light gray for alternating sections */
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    /* More modern font stack */
+    background-color: var(--light-bg);
+    color: #333;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.8)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
-    background-position: center;
-    height: 80vh;
-    min-height: 500px;
-}
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
+    :root {
+        --primary-color: #0d6efd;
+        /* Premium Blue like the reference */
+        --secondary-color: #212529;
+        --accent-color: #ffc107;
+        --light-bg: #ffffff;
+        /* White background for premium feel */
+        --section-bg: #f8f9fa;
+        /* Light gray for alternating sections */
+    }
 
-.car-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    body {
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        /* More modern font stack */
+        background-color: var(--light-bg);
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
 
-.car-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
+    .hero-section {
+        background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.8)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 85vh;
+        min-height: 600px;
+        position: relative;
+    }
 
-footer {
-    margin-top: auto;
-}
+    .card-img-top {
+        height: 220px;
+        object-fit: cover;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .car-card {
+        border: none;
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        background: #fff;
+    }
+
+    .car-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-success {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .btn-success:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+
+    .text-success {
+        color: var(--primary-color) !important;
+    }
+
+    footer {
+        margin-top: auto;
+    }
