@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #198754; /* Bootstrap Success Green */
+    --secondary-color: #212529; /* Bootstrap Dark */
+    --accent-color: #ffc107; /* Bootstrap Warning Yellow */
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    min-height: 500px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+footer {
+    margin-top: auto;
+}
